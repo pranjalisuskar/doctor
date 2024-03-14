@@ -15,40 +15,25 @@ import {
 
 const Apoimentform = () => {
   return (
-   <div className='page-content'>
-    {/* <Container> */}
-<div className="table-responsive">
-  <div className="container mt-5">
-    <table className="table table-striped table-hover text-center table-custom">
-      <thead>
-        <tr>
-          <th>From Name</th>
-          <th>Date</th>
-          <th>To</th>
-          <th>From Email</th>
-          <th>Subject</th>
-          <th>Message</th>
-          <th>Status</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>No entries found</td>
-          <td>No entries found</td>
-          <td>No entries found</td>
-          <td>No entries found</td>
-          <td>No entries found</td>
-          <td>No entries found</td>
-          <td>No entries found</td>
-        </tr>
-      </tbody>
-    </table>
+  <div classname="page-content">
+    
+  <div>
+    <form action="/action_page.php">
+      <label htmlFor="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." />
+      <label htmlFor="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." />
+      <label htmlFor="country">Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+      <input type="submit" defaultValue="Submit" />
+    </form>
   </div>
 </div>
 
-
-{/* </Container> */}
-</div>
 
   )
 }
